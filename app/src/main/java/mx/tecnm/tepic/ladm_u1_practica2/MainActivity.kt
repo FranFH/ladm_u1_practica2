@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
        }catch(io:IOException){
             AlertDialog.Builder(this)
                     .setTitle("Error")
-                    .setMessage("No se pudo guardar")
+                    .setMessage("No se pudo guardar, revise los campos")
                     .setPositiveButton("ok"){
                         d,i->d.dismiss()
                     }
@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
         }catch(io:IOException){
             AlertDialog.Builder(this)
                     .setTitle("Error")
-                    .setMessage("No se abrir, introduzca un nombre válido")
+                    .setMessage("ERROR ARCHIVO NO ENCONTRADO")
                     .setPositiveButton("ok"){
                         d,i->d.dismiss()
                     }
@@ -146,7 +146,7 @@ class MainActivity : AppCompatActivity() {
         }catch(io:Exception){
             AlertDialog.Builder(this)
                     .setTitle("Error")
-                    .setMessage("No se pudo leer")
+                    .setMessage("ERROR ARCHIVO NO ENCONTRADO")
                     .setPositiveButton("ok"){
                         d,i->d.dismiss()
                     }
