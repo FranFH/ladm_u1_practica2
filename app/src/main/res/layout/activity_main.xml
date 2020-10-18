@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Escriba una frase:"
+        android:textSize="24sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/textarea"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="6"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:checked="true"
+            android:id="@+id/interno"
+            android:layout_height="wrap_content"
+            android:text="Archivo memoria interna"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:id="@+id/externa"
+            android:layout_height="wrap_content"
+            android:text="Archivo memoria SD"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:text="Nombre del archivo:"
+        android:textSize="24sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/archivo"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/guardar"
+            android:layout_height="wrap_content"
+            android:text="Guardar"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/abrir"
+            android:layout_height="wrap_content"
+            android:text="Abrir"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
